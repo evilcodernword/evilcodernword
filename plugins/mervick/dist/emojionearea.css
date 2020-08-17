@@ -1,0 +1,676 @@
+.dropdown-menu.textcomplete-dropdown[data-strategy="emojionearea"] {
+    position: absolute;
+    z-index: 1000;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.dropdown-menu.textcomplete-dropdown[data-strategy="emojionearea"] li.textcomplete-item {
+    font-size: 14px;
+    padding: 1px 3px;
+    border: 0;
+}
+.dropdown-menu.textcomplete-dropdown[data-strategy="emojionearea"] li.textcomplete-item a {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    line-height: 1.8em;
+    padding: 0 1.54em 0 0.615em;
+    color: #4f4f4f;
+}
+.dropdown-menu.textcomplete-dropdown[data-strategy="emojionearea"] li.textcomplete-item.active,
+.dropdown-menu.textcomplete-dropdown[data-strategy="emojionearea"] li.textcomplete-item:hover {
+    background-color: #e4e4e4;
+}
+.dropdown-menu.textcomplete-dropdown[data-strategy="emojionearea"] li.textcomplete-item.active a,
+.dropdown-menu.textcomplete-dropdown[data-strategy="emojionearea"] li.textcomplete-item:hover a {
+    color: #333;
+}
+.dropdown-menu.textcomplete-dropdown[data-strategy="emojionearea"] li.textcomplete-item .emojioneemoji {
+    font-size: inherit;
+    height: 2ex;
+    width: 2.1ex;
+    min-height: 20px;
+    min-width: 20px;
+    display: inline-block;
+    margin: 0 5px 0.2ex 0;
+    line-height: normal;
+    vertical-align: middle;
+    max-width: 100%;
+    top: 0;
+}
+.emojionearea-text .emojioneemoji,
+.emojionearea-text [class*="emojione-"] {
+    font-size: inherit;
+    height: 2ex;
+    width: 2.1ex;
+    min-height: 20px;
+    min-width: 20px;
+    display: inline-block;
+    margin: -0.2ex 0.15em 0.2ex;
+    line-height: normal;
+    vertical-align: middle;
+    max-width: 100%;
+    top: 0;
+}
+.emojionearea,
+.emojionearea * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.emojionearea.emojionearea-disable {
+    position: relative;
+    background-color: #eee;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.emojionearea.emojionearea-disable:before {
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.3;
+    position: absolute;
+    background-color: #eee;
+}
+.emojionearea,
+.emojionearea.form-control {
+    display: block;
+    position: relative !important;
+    width: 99%;
+    height: auto;
+    padding: 0;
+    font-size: 14px;
+    background-color: #1a191f;
+    border: 1px solid transparent;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-transition: border-color 0.15s ease-in-out, -moz-box-shadow 0.15s ease-in-out;
+    -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.emojionearea.focused {
+    border: 1px solid #FD6060;
+    outline: 0;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(253, 96, 96, 0.6);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(253, 96, 96, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(253, 96, 96, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(253, 96, 96, 0.6);
+}
+.emojionearea .emojionearea-editor {
+    display: block;
+    height: auto;
+    min-height: 4em;
+    max-height: 15em;
+    overflow: auto;
+    padding: 6px 24px 6px 12px;
+    line-height: 1.42857143;
+    font-size: inherit;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    cursor: text;
+    margin-right: 1px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.emojionearea .emojionearea-editor:empty:before {
+    content: attr(placeholder);
+    display: block;
+    color: #bbb;
+}
+.emojionearea .emojionearea-editor:focus {
+    border: 0;
+    outline: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.emojionearea .emojionearea-editor .emojioneemoji,
+.emojionearea .emojionearea-editor [class*="emojione-"] {
+    font-size: inherit;
+    height: 2ex;
+    width: 2.1ex;
+    min-height: 20px;
+    min-width: 20px;
+    display: inline-block;
+    margin: -0.2ex 0.15em 0.2ex;
+    line-height: normal;
+    vertical-align: middle;
+    max-width: 100%;
+    top: 0;
+}
+.emojionearea.emojionearea-inline {
+    height: 34px;
+}
+.emojionearea.emojionearea-inline > .emojionearea-editor {
+    height: 32px;
+    min-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 12px;
+    right: 24px;
+    padding: 6px 0;
+}
+.emojionearea.emojionearea-inline > .emojionearea-button {
+    top: 4px;
+}
+.emojionearea .emojionearea-button {
+    z-index: 5;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 24px;
+    height: 24px;
+    opacity: 0.6;
+    cursor: pointer;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+
+}
+.emojionearea .emojionearea-button:hover {
+    opacity: 1;
+}
+.emojionearea .emojionearea-button > div {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.emojionearea .emojionearea-button > div.emojionearea-button-open {
+    background-position: 0 -24px;
+    filter: alpha(enabled=false);
+    opacity: 1;
+}
+.emojionearea .emojionearea-button > div.emojionearea-button-close {
+    background-position: 0 0;
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    filter: alpha(Opacity=0);
+    opacity: 0;
+}
+.emojionearea .emojionearea-button.active > div.emojionearea-button-open {
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    filter: alpha(Opacity=0);
+    opacity: 0;
+}
+.emojionearea .emojionearea-button.active > div.emojionearea-button-close {
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+    filter: alpha(enabled=false);
+    opacity: 1;
+}
+.emojionearea .emojionearea-picker {
+    background: #fff;
+    position: absolute;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.32);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.32);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.32);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 276px;
+    width: 316px;
+    top: -15px;
+    right: -15px;
+    z-index: 90;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    filter: alpha(Opacity=0);
+    opacity: 0;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.emojionearea .emojionearea-picker.hidden {
+    display: none;
+}
+.emojionearea .emojionearea-picker .emojionearea-wrapper {
+    position: relative;
+    height: 276px;
+    width: 316px;
+}
+.emojionearea .emojionearea-picker .emojionearea-wrapper:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 91;
+}
+.emojionearea .emojionearea-picker .emojionearea-filters {
+    width: 100%;
+    position: absolute;
+    z-index: 95;
+    background: #f5f7f9;
+    padding: 0 0 0 7px;
+    height: 40px;
+}
+.emojionearea .emojionearea-picker .emojionearea-filters .emojionearea-filter {
+    display: block;
+    float: left;
+    height: 40px;
+    width: 32px;
+    padding: 7px 1px 0;
+    cursor: pointer;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+.emojionearea .emojionearea-picker .emojionearea-filters .emojionearea-filter.active {
+    background: #fff;
+}
+.emojionearea .emojionearea-picker .emojionearea-filters .emojionearea-filter.active,
+.emojionearea .emojionearea-picker .emojionearea-filters .emojionearea-filter:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+.emojionearea .emojionearea-picker .emojionearea-filters .emojionearea-filter > i {
+    width: 24px;
+    height: 24px;
+    top: 0;
+}
+.emojionearea .emojionearea-picker .emojionearea-filters .emojionearea-filter > img {
+    width: 24px;
+    height: 24px;
+    margin: 0 3px;
+}
+.emojionearea .emojionearea-picker .emojionearea-search-panel {
+    height: 30px;
+    position: absolute;
+    z-index: 95;
+    top: 40px;
+    left: 0;
+    right: 0;
+    padding: 5px 0 5px 8px;
+}
+.emojionearea .emojionearea-picker .emojionearea-search-panel .emojionearea-tones {
+    float: right;
+    margin-right: 10px;
+    margin-top: -1px;
+}
+.emojionearea .emojionearea-picker .emojionearea-tones-panel .emojionearea-tones {
+    position: absolute;
+    top: 4px;
+    left: 171px;
+}
+.emojionearea .emojionearea-picker .emojionearea-search {
+    float: left;
+    padding: 0;
+    height: 20px;
+    width: 160px;
+}
+.emojionearea .emojionearea-picker .emojionearea-search > input {
+    outline: 0;
+    width: 160px;
+    min-width: 160px;
+    height: 20px;
+}
+.emojionearea .emojionearea-picker .emojionearea-tones {
+    padding: 0;
+    width: 120px;
+    height: 20px;
+}
+.emojionearea .emojionearea-picker .emojionearea-tones > .btn-tone {
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    vertical-align: middle;
+    outline: 0;
+    background: 0 0;
+    cursor: pointer;
+    position: relative;
+}
+.emojionearea .emojionearea-picker .emojionearea-tones > .btn-tone.btn-tone-0,
+.emojionearea .emojionearea-picker .emojionearea-tones > .btn-tone.btn-tone-0:after {
+    background-color: #ffcf3e;
+}
+.emojionearea .emojionearea-picker .emojionearea-tones > .btn-tone.btn-tone-1,
+.emojionearea .emojionearea-picker .emojionearea-tones > .btn-tone.btn-tone-1:after {
+    background-color: #fae3c5;
+}
+.emojionearea .emojionearea-picker .emojionearea-tones > .btn-tone.btn-tone-2,
+.emojionearea .emojionearea-picker .emojionearea-tones > .btn-tone.btn-tone-2:after {
+    background-color: #e2cfa5;
+}
+.emojionearea .emojionearea-picker .emojionearea-tones > .btn-tone.btn-tone-3,
+.emojionearea .emojionearea-picker .emojionearea-tones > .btn-tone.btn-tone-3:after {
+    background-color: #daa478;
+}
+.emojionearea .emojionearea-picker .emojionearea-tones > .btn-tone.btn-tone-4,
+.emojionearea .emojionearea-picker .emojionearea-tones > .btn-tone.btn-tone-4:after {
+    background-color: #a78058;
+}
+.emojionearea .emojionearea-picker .emojionearea-tones > .btn-tone.btn-tone-5,
+.emojionearea .emojionearea-picker .emojionearea-tones > .btn-tone.btn-tone-5:after {
+    background-color: #5e4d43;
+}
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-bullet > .btn-tone,
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-square > .btn-tone {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    background-color: transparent;
+}
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-bullet > .btn-tone:after,
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-square > .btn-tone:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+}
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-bullet > .btn-tone.active:after,
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-square > .btn-tone.active:after {
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+}
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-checkbox > .btn-tone,
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-radio > .btn-tone {
+    width: 16px;
+    height: 16px;
+    margin: 0 2px;
+}
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-checkbox > .btn-tone.active:after,
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-radio > .btn-tone.active:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: 8px;
+    height: 8px;
+    top: 2px;
+    left: 2px;
+    box-sizing: initial;
+}
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojionearea-category-block:after,
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojionearea-category-block:before,
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojionearea-category-block > .emojionearea-category:after,
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojionearea-category-block > .emojionearea-category:before,
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojionearea-category-title:after,
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojionearea-category-title:before {
+    content: " ";
+    clear: both;
+    display: block;
+}
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-bullet > .btn-tone,
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-bullet > .btn-tone:after,
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-radio > .btn-tone,
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-radio > .btn-tone:after {
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-checkbox > .btn-tone,
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-checkbox > .btn-tone:after,
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-square > .btn-tone,
+.emojionearea .emojionearea-picker .emojionearea-tones.emojionearea-tones-square > .btn-tone:after {
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+.emojionearea .emojionearea-picker .emojionearea-scroll-area {
+    height: 236px;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 100%;
+    position: absolute;
+    padding: 0 0 5px;
+}
+.emojionearea .emojionearea-picker .emojionearea-search-panel + .emojionearea-scroll-area {
+    height: 206px;
+}
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojionearea-emojis-list {
+    z-index: 1;
+}
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojionearea-category-title {
+    display: block;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #b2b2b2;
+    background: #fff;
+    line-height: 20px;
+    margin: 0;
+    padding: 7px 0 5px 6px;
+}
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojionearea-category-block {
+    padding: 0 0 0 7px;
+}
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojionearea-category-block > .emojionearea-category {
+    padding: 0 !important;
+}
+.emojionearea .emojionearea-picker .emojionearea-scroll-area [class*="emojione-"] {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    top: 0;
+}
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojibtn {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 25px;
+    height: 25px;
+    float: left;
+    display: block;
+    margin: 1px;
+    padding: 3px;
+}
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojibtn:hover {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #e4e4e4;
+    cursor: pointer;
+}
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojibtn i,
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojibtn img {
+    float: left;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojibtn img.lazy-emoji {
+    filter: alpha(Opacity=0);
+    opacity: 0;
+}
+.emojionearea .emojionearea-picker.emojionearea-filters-position-top .emojionearea-filters {
+    top: 0;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.emojionearea .emojionearea-picker.emojionearea-filters-position-top.emojionearea-search-position-top .emojionearea-scroll-area {
+    bottom: 0;
+}
+.emojionearea .emojionearea-picker.emojionearea-filters-position-top.emojionearea-search-position-bottom .emojionearea-scroll-area {
+    top: 40px;
+}
+.emojionearea .emojionearea-picker.emojionearea-filters-position-top.emojionearea-search-position-bottom .emojionearea-search-panel {
+    top: initial;
+    bottom: 0;
+}
+.emojionearea .emojionearea-picker.emojionearea-filters-position-bottom .emojionearea-filters {
+    bottom: 0;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.emojionearea .emojionearea-picker.emojionearea-filters-position-bottom.emojionearea-search-position-bottom .emojionearea-scroll-area {
+    top: 0;
+}
+.emojionearea .emojionearea-picker.emojionearea-filters-position-bottom.emojionearea-search-position-bottom .emojionearea-search-panel,
+.emojionearea .emojionearea-picker.emojionearea-filters-position-bottom.emojionearea-search-position-top .emojionearea-scroll-area {
+    top: initial;
+    bottom: 40px;
+}
+.emojionearea .emojionearea-picker.emojionearea-filters-position-bottom.emojionearea-search-position-top .emojionearea-search-panel {
+    top: 0;
+}
+.emojionearea .emojionearea-picker.emojionearea-picker-position-top {
+    margin-top: -286px;
+    right: -14px;
+}
+.emojionearea .emojionearea-picker.emojionearea-picker-position-top .emojionearea-wrapper:after {
+    width: 19px;
+    height: 10px;
+    background-position: -2px -49px;
+    bottom: -10px;
+    right: 20px;
+}
+.emojionearea .emojionearea-picker.emojionearea-picker-position-top.emojionearea-filters-position-bottom .emojionearea-wrapper:after {
+    background-position: -2px -80px;
+}
+.emojionearea .emojionearea-picker.emojionearea-picker-position-left,
+.emojionearea .emojionearea-picker.emojionearea-picker-position-right {
+    margin-right: -326px;
+    top: -8px;
+}
+.emojionearea .emojionearea-picker.emojionearea-picker-position-left .emojionearea-wrapper:after,
+.emojionearea .emojionearea-picker.emojionearea-picker-position-right .emojionearea-wrapper:after {
+    width: 10px;
+    height: 19px;
+    background-position: 0 -60px;
+    top: 13px;
+    left: -10px;
+}
+.emojionearea .emojionearea-picker.emojionearea-picker-position-left.emojionearea-filters-position-bottom .emojionearea-wrapper:after,
+.emojionearea .emojionearea-picker.emojionearea-picker-position-right.emojionearea-filters-position-bottom .emojionearea-wrapper:after {
+    background-position: right -60px;
+}
+.emojionearea .emojionearea-picker.emojionearea-picker-position-bottom {
+    margin-top: 10px;
+    right: -15px;
+    top: 47px;
+}
+.emojionearea .emojionearea-picker.emojionearea-picker-position-bottom .emojionearea-wrapper:after {
+    width: 19px;
+    height: 10px;
+    background-position: -2px -100px;
+    top: -10px;
+    right: 20px;
+}
+.emojionearea .emojionearea-picker.emojionearea-picker-position-bottom.emojionearea-filters-position-bottom .emojionearea-wrapper:after {
+    background-position: -2px -90px;
+}
+.emojionearea .emojionearea-button.active + .emojionearea-picker {
+    filter: alpha(enabled=false);
+    opacity: 1;
+}
+.emojionearea .emojionearea-button.active + .emojionearea-picker-position-top {
+    margin-top: -269px;
+}
+.emojionearea .emojionearea-button.active + .emojionearea-picker-position-left,
+.emojionearea .emojionearea-button.active + .emojionearea-picker-position-right {
+    margin-right: -309px;
+}
+.emojionearea .emojionearea-button.active + .emojionearea-picker-position-bottom {
+    margin-top: -7px;
+}
+.emojionearea.emojionearea-standalone {
+    display: inline-block;
+    width: auto;
+    box-shadow: none;
+}
+.emojionearea.emojionearea-standalone .emojionearea-editor {
+    min-height: 33px;
+    position: relative;
+    padding: 6px 42px 6px 6px;
+}
+.emojionearea.emojionearea-standalone .emojionearea-editor::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    bottom: 4px;
+    border-left: 1px solid #e6e6e6;
+}
+.emojionearea.emojionearea-standalone .emojionearea-editor.has-placeholder .emojioneemoji {
+    opacity: 0.4;
+}
+.emojionearea.emojionearea-standalone .emojionearea-button {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+}
+.emojionearea.emojionearea-standalone .emojionearea-button > div {
+    right: 6px;
+    top: 5px;
+}
+.emojionearea.emojionearea-standalone .emojionearea-picker.emojionearea-picker-position-bottom .emojionearea-wrapper:after,
+.emojionearea.emojionearea-standalone .emojionearea-picker.emojionearea-picker-position-top .emojionearea-wrapper:after {
+    right: 23px;
+}
+.emojionearea.emojionearea-standalone .emojionearea-picker.emojionearea-picker-position-left .emojionearea-wrapper:after,
+.emojionearea.emojionearea-standalone .emojionearea-picker.emojionearea-picker-position-right .emojionearea-wrapper:after {
+    top: 15px;
+}
+.emojionearea .emojionearea-button > div,
+.emojionearea .emojionearea-picker .emojionearea-wrapper:after {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAABuCAYAAADMB4ipAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKT2lDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjanVNnVFPpFj333vRCS4iAlEtvUhUIIFJCi4AUkSYqIQkQSoghodkVUcERRUUEG8igiAOOjoCMFVEsDIoK2AfkIaKOg6OIisr74Xuja9a89+bN/rXXPues852zzwfACAyWSDNRNYAMqUIeEeCDx8TG4eQuQIEKJHAAEAizZCFz/SMBAPh+PDwrIsAHvgABeNMLCADATZvAMByH/w/qQplcAYCEAcB0kThLCIAUAEB6jkKmAEBGAYCdmCZTAKAEAGDLY2LjAFAtAGAnf+bTAICd+Jl7AQBblCEVAaCRACATZYhEAGg7AKzPVopFAFgwABRmS8Q5ANgtADBJV2ZIALC3AMDOEAuyAAgMADBRiIUpAAR7AGDIIyN4AISZABRG8lc88SuuEOcqAAB4mbI8uSQ5RYFbCC1xB1dXLh4ozkkXKxQ2YQJhmkAuwnmZGTKBNA/g88wAAKCRFRHgg/P9eM4Ors7ONo62Dl8t6r8G/yJiYuP+5c+rcEAAAOF0ftH+LC+zGoA7BoBt/qIl7gRoXgugdfeLZrIPQLUAoOnaV/Nw+H48PEWhkLnZ2eXk5NhKxEJbYcpXff5nwl/AV/1s+X48/Pf14L7iJIEyXYFHBPjgwsz0TKUcz5IJhGLc5o9H/LcL//wd0yLESWK5WCoU41EScY5EmozzMqUiiUKSKcUl0v9k4t8s+wM+3zUAsGo+AXuRLahdYwP2SycQWHTA4vcAAPK7b8HUKAgDgGiD4c93/+8//UegJQCAZkmScQAAXkQkLlTKsz/HCAAARKCBKrBBG/TBGCzABhzBBdzBC/xgNoRCJMTCQhBCCmSAHHJgKayCQiiGzbAdKmAv1EAdNMBRaIaTcA4uwlW4Dj1wD/phCJ7BKLyBCQRByAgTYSHaiAFiilgjjggXmYX4IcFIBBKLJCDJiBRRIkuRNUgxUopUIFVIHfI9cgI5h1xGupE7yAAygvyGvEcxlIGyUT3UDLVDuag3GoRGogvQZHQxmo8WoJvQcrQaPYw2oefQq2gP2o8+Q8cwwOgYBzPEbDAuxsNCsTgsCZNjy7EirAyrxhqwVqwDu4n1Y8+xdwQSgUXACTYEd0IgYR5BSFhMWE7YSKggHCQ0EdoJNwkDhFHCJyKTqEu0JroR+cQYYjIxh1hILCPWEo8TLxB7iEPENyQSiUMyJ7mQAkmxpFTSEtJG0m5SI+ksqZs0SBojk8naZGuyBzmULCAryIXkneTD5DPkG+Qh8lsKnWJAcaT4U+IoUspqShnlEOU05QZlmDJBVaOaUt2ooVQRNY9aQq2htlKvUYeoEzR1mjnNgxZJS6WtopXTGmgXaPdpr+h0uhHdlR5Ol9BX0svpR+iX6AP0dwwNhhWDx4hnKBmbGAcYZxl3GK+YTKYZ04sZx1QwNzHrmOeZD5lvVVgqtip8FZHKCpVKlSaVGyovVKmqpqreqgtV81XLVI+pXlN9rkZVM1PjqQnUlqtVqp1Q61MbU2epO6iHqmeob1Q/pH5Z/YkGWcNMw09DpFGgsV/jvMYgC2MZs3gsIWsNq4Z1gTXEJrHN2Xx2KruY/R27iz2qqaE5QzNKM1ezUvOUZj8H45hx+Jx0TgnnKKeX836K3hTvKeIpG6Y0TLkxZVxrqpaXllirSKtRq0frvTau7aedpr1Fu1n7gQ5Bx0onXCdHZ4/OBZ3nU9lT3acKpxZNPTr1ri6qa6UbobtEd79up+6Ynr5egJ5Mb6feeb3n+hx9L/1U/W36p/VHDFgGswwkBtsMzhg8xTVxbzwdL8fb8VFDXcNAQ6VhlWGX4YSRudE8o9VGjUYPjGnGXOMk423GbcajJgYmISZLTepN7ppSTbmmKaY7TDtMx83MzaLN1pk1mz0x1zLnm+eb15vft2BaeFostqi2uGVJsuRaplnutrxuhVo5WaVYVVpds0atna0l1rutu6cRp7lOk06rntZnw7Dxtsm2qbcZsOXYBtuutm22fWFnYhdnt8Wuw+6TvZN9un2N/T0HDYfZDqsdWh1+c7RyFDpWOt6azpzuP33F9JbpL2dYzxDP2DPjthPLKcRpnVOb00dnF2e5c4PziIuJS4LLLpc+Lpsbxt3IveRKdPVxXeF60vWdm7Obwu2o26/uNu5p7ofcn8w0nymeWTNz0MPIQ+BR5dE/C5+VMGvfrH5PQ0+BZ7XnIy9jL5FXrdewt6V3qvdh7xc+9j5yn+M+4zw33jLeWV/MN8C3yLfLT8Nvnl+F30N/I/9k/3r/0QCngCUBZwOJgUGBWwL7+Hp8Ib+OPzrbZfay2e1BjKC5QRVBj4KtguXBrSFoyOyQrSH355jOkc5pDoVQfujW0Adh5mGLw34MJ4WHhVeGP45wiFga0TGXNXfR3ENz30T6RJZE3ptnMU85ry1KNSo+qi5qPNo3ujS6P8YuZlnM1VidWElsSxw5LiquNm5svt/87fOH4p3iC+N7F5gvyF1weaHOwvSFpxapLhIsOpZATIhOOJTwQRAqqBaMJfITdyWOCnnCHcJnIi/RNtGI2ENcKh5O8kgqTXqS7JG8NXkkxTOlLOW5hCepkLxMDUzdmzqeFpp2IG0yPTq9MYOSkZBxQqohTZO2Z+pn5mZ2y6xlhbL+xW6Lty8elQfJa7OQrAVZLQq2QqboVFoo1yoHsmdlV2a/zYnKOZarnivN7cyzytuQN5zvn//tEsIS4ZK2pYZLVy0dWOa9rGo5sjxxedsK4xUFK4ZWBqw8uIq2Km3VT6vtV5eufr0mek1rgV7ByoLBtQFr6wtVCuWFfevc1+1dT1gvWd+1YfqGnRs+FYmKrhTbF5cVf9go3HjlG4dvyr+Z3JS0qavEuWTPZtJm6ebeLZ5bDpaql+aXDm4N2dq0Dd9WtO319kXbL5fNKNu7g7ZDuaO/PLi8ZafJzs07P1SkVPRU+lQ27tLdtWHX+G7R7ht7vPY07NXbW7z3/T7JvttVAVVN1WbVZftJ+7P3P66Jqun4lvttXa1ObXHtxwPSA/0HIw6217nU1R3SPVRSj9Yr60cOxx++/p3vdy0NNg1VjZzG4iNwRHnk6fcJ3/ceDTradox7rOEH0x92HWcdL2pCmvKaRptTmvtbYlu6T8w+0dbq3nr8R9sfD5w0PFl5SvNUyWna6YLTk2fyz4ydlZ19fi753GDborZ752PO32oPb++6EHTh0kX/i+c7vDvOXPK4dPKy2+UTV7hXmq86X23qdOo8/pPTT8e7nLuarrlca7nuer21e2b36RueN87d9L158Rb/1tWeOT3dvfN6b/fF9/XfFt1+cif9zsu72Xcn7q28T7xf9EDtQdlD3YfVP1v+3Njv3H9qwHeg89HcR/cGhYPP/pH1jw9DBY+Zj8uGDYbrnjg+OTniP3L96fynQ89kzyaeF/6i/suuFxYvfvjV69fO0ZjRoZfyl5O/bXyl/erA6xmv28bCxh6+yXgzMV70VvvtwXfcdx3vo98PT+R8IH8o/2j5sfVT0Kf7kxmTk/8EA5jz/GMzLdsAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADqYAAAOpgAABdvkl/FRgAAClpJREFUeNrsV2lsVccZPTNz733LfQve8IZtwM8sfoBxbEKQITQQEhHSSkmUULVpq2YR+VF1Sau2QlXV/iiRkqhRpZQ2VdsobRSpaRJ1UxZDiVmMsQ22AWMMsQ2xjbGxn7e33mXu9AfYfTbvPT8wNKnESPfPvXPOfDPznfN9lwghcLsGxW0cd8j/9+Rzjj179ogbeR8/SLrEu3fvJnO9T5s8UWS7d+8myd7PK/Jk46YiT2eBVMRpkac6onld6G2NfL5nTud7FKkCuK15flsVemfcGXfGPEda0l2oIHd5LlbmuJDLOfjAJC61D+JUFAjfNPlj5dj5zBY8vfnuhV9wlCyW4fICFgfGhjF8vmfs/YbwB3v347dNQzic9nZyGRZ99G0cEI0rhQj8SIjgX4UI1wsRaREiclyI0MdCTLwuxMA3hfhHtvjVl/D7tCJf7sbq+heU+qxHd7jh2gWwxYARBswgYJkAIQBRAMULSBKgNwGXfoWDv2ltve9V1AggmpDcw0jmxVeUvozHHnZC/Q6gG4A+NHMaIcBUZ8wkQC0GjF5g+BeoffFU84N/tO6emsriyf/ydfmfa3dVLofyDUCLALF+QBiA0P/78BggWYAtjNjwRYSvdMCeVQA4S1BacqZwoCXMWwbFoRmRV+fRmuY3so6gbCegbABilwFCZ+5NAHAqMMJDaDgZQ0wuB6EyzOAnWF9hR2ZmM4JvfoScH4SzNSAwHfmeR9RX1n5xUTksP8A1wAoBQgOsGCCuPdBh8cuoa46B5z+Nbdu2oXTZGkSUNWhqOotiWyc8xSGcb4oOnxriR+m18OUtlc77YNqB8CUgeg5QLwPey0DGZcBxCYhdAEQXLnacga1wJ+7fWI733n0HL7/8EiqWZcK/6Wmc61GADOChuxzbAUACgBIX8RUtcmZCswDzImABre8FcPbUOBQ7RWVNNkorvIAxirBRAF/5BgDA957/Pnp7e7F9+w6s8pfjeKcPCNVhebGtDFdzCchy02yo7NoedBz8sB8H9w9BdsgwNI6WE5fx5WeXYM2DKpzkUwQnh5GfmYO9e/diYGAAy8p8GNUAxewHJAc8LuIG4JUAIGYIHfxaegUtlC7LQGVNHjzZNgACg70REAvAqBNFCwfR0vEzDGT+Gjt27AAAaADa696EXz4EsIXQ+RUDgC4BwKdjVk9o3LRcxVf7mEXL3ICdASEDAJC3RAUMAYQ5FLUEfuNdnG/SMFn4OGwOFbGRg/BFX0NWVgYAhksj5iCAoAQAIY7hlvOxU/duEGsRZtCuaOCCwJktAw4KKAJwAPDKgCBwZy9FVXQftOF9GP3UQpYRhierCOBOgIRxtDN2YvpCAeBP/w6+de+TxloUOnHqnQB++XI3Vq1xw7tAhtttQXEAksJgCQGuWdAiFLEIx9nWSSwsUfGTF1VAMYHeCP5cH3lrBvnrDdG9Lxwe/3nOw07Hynuy4Vs2gGP1QfgKFeyk98BpKeiIDcLDbCi25aFFfILaifNgMeAr3y0AXAywRfHOe2MtXePWvhnyF4DRdi524WsPq48pBSrWV+UgMDkKDxgeL30UeUuqkVOYixVFy1FYWA3Dfhn9GT341o9XYN3WXIBGwFvGsPmngw9FOQav85aeAD9tXIhlbt3mWK/kq6ha44VhULiMGqgr7kIsywuWVwiFZOCKehr3PBXEqsoiQI4AfZPY8lzfs50B/n5C4wKAw136h4GOCHuokm1ma2xY4lERCWyCuvIuyPnZUPJzYEYZ1KLTWLRtBJAIrjQE+Pbn+p461Gu8Hs/FEpl80wX9479/MHGkmBmlZapWrA6sANwloAvtgDAgne+H3XsAMdtF/O7V8b898sOBx89PWPtvuMguL8DGVyrX7BfPvCTEnreE2P0H0bnlq8aTFe4XFi7A6nkXaADY5PA8vzmz6O4RLTL+xsiFN6PAkc9Ha/HAE7vIUF83dbq8tL/nrKu368xouiTFPn/moqUrQ5HQhJVbVGrVvv2aSPhPRBkjnowsq6i03JcOcVFpuc+TkWVRxkhaP1zezDwzO784WLZ63apUxGWr163Kzi8OejPzzDkv1OevojkFixkAmXPTZpmmKxwaz+k4ceTEbGB51cYq1bVgmEpSiDFJA2AMD1zkXWdOWAkjX+qvFqahC9PQLUool232mOrOGPdXb1ofP89fvWm96s4Yl232GCWUm4ZumYYulvqrRcpj0bWokGSFCwiDEGJIshJxuhaMlFdtrJqK2OlaMCLJSoQQYggIQ5IVrmtRMWeex2eNZXGJUqYAkE1Dt2mxiGyzOw1JVjQAhmVxnVJmzs6SlCKKX8A0dCYrdmZxkxFKibAsQZnEDT3GJVnhyYhTKnRqAcXmIJKsENPQp31IkhVuGrrQtahIRjyn/B94YhcBgKG+7uvuJreo1AKAZMSf7Z/FVOQ3EmE8Rkr2sefMcTLU1x2/OJ+LcDZGSnaJOQWLyZRfWJyLZOSpMFKy9ANAhSXIxOigNDkWoADG5krZ2RgpkXAYk2TOTaZrMXlidMR97kxbl+qwkVRim43p6+7okhJMsgkhZEvT7aGJgOfcmbb2uVQ8G9PX3dE+7S2KzUFMQ2eUMsWyLLuha+5waDznZHN9e7JLTIb55HTzNIYO9XVTSVaIrNjZNQ9xRkLj2cfrD5xIRpwMM9uaJQAwDZ0xJjHOTVs4OLbgeP2BxrnyeTam48SRxqSViFBKtFhEThXxdQq8hklUTGaQC8sSNrvTqK7ZUpUu+RRmyusTkkuywimTuCQrmurOGF+3cev6uYhnY2ZXKwCguUWllmnowtBjHMB05Um1g2SY2Tug8aXtamWhMVmxBVXXguGKdTVJq38yTHzHQGvffk3kFpVakdCERSkzOTc1YVkalaSQy5s1vNy/9rr+ZS7MVM9DkvmEJCuUEDrtE33dHXN6y2wMSVXa4h2uYd+7RjrlMB5DUnmz6smY/n6yYX9afh6Pua2V6LNpoTvbW9NuoVesqryxFjpRCib8rfGvvbkWOpWIAKBiXc38W+hETllds+XWtNCzjWzdxq23toWeMrLqmi13WujPcQudtg9UbLh/xtyTDfvn9Bp6M8S3pD+v2HA/uXbmMA2dxp25ZRo6dC0qUu2ApSJ2urzEsjhlkkwJYNNikQLFZtcoZcLiJrE5VGTlFmKovyf9Y4knlmSFcW46gpOjvrajtT3BydEyyzJtkqwwy+LU6fKSZMdGU0bMJEkIIYeDY772pro2AGhvqmsNTYyu5ZyrjElSqgVoku6VEhDGOZdDE4EVpxs/nmFcp5vqDocnR1dy07QREGYaOlVsjtTkPn8VkWQFkqwQk5tsfGSw7HRTXXOiLbc3HzwyHhhczK8eHZFkBT5/FUlKrnoyQBkjhFAEBvvyO9uOpmxKO9sa2kYG+3IJoaCMEdWTMfeFDvZ1eXrOtnalk8s9HS0XBvu7XHcU+n+o0KMH/nV7FNp0qLYNAJoO1d5ahTYe/GhGvjceqr01Cm08VJtQoU2H981PoS3H6lIqtOXYwZtTaHtrY1oKbW85llSh/xkAk7SrlGySCQ4AAAAASUVORK5CYII=);
+}
+.emojionearea.emojionearea-standalone .emojionearea-editor.has-placeholder {
+    background-repeat: no-repeat;
+    background-position: 20px 4px;
+    background-image: url(data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMAQMAAABsu86kAAAABlBMVEUAAAC/v79T5hyIAAAAAXRSTlMAQObYZgAAABNJREFUCNdjYGNgQEb/P4AQqiAASiUEG6Vit44AAAAASUVORK5CYII=) !important;
+}

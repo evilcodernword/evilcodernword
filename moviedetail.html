@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Details</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="plugins/mervick/dist/emojionearea.css" media="screen">
+  	<link rel="stylesheet" type="text/css" href="plugins/mervick/tomorrow.css" media="screen">  
+  	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="plugins/mervick/prettify.js"></script>
+	<script type="text/javascript" src="plugins/mervick/dist/emojionearea.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg mb-4" id="nav">
+      <div class="container">
+		<a class="navbar-brand text-light" href="#">Logo</a>
+		<button class="navbar-toggler hamburger_button border-0" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+		    <div class="animated-icon1 border-0"><span></span><span></span><span></span></div>
+		</button>
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">People</a>
+            </li>
+          </ul>
+        <form class="navbar-form mr-1" role="search">
+	        <div class="input-group">
+	            <input type="text" class="form-control search-nav-bar" placeholder="Search" name="srch-term" id="srch-term">
+	            <div class="input-group-btn search_button_header">
+	                <button class="btn search_button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+	            </div>
+	        </div>
+        </form>
+           <a type="button" href="#" class="nav-link btn signup_header">SIGN UP</a>
+        </div>
+      </div>
+    </nav>
+	<section>
+		<div class="container-fluid">
+	      <div class="row">
+		    <div class="col-xl-3 col-lg-3">
+		        <div class="p-3 widget shadow rounded mb-4 cover-img">
+		           <img src="https://static.businessinsider.com/image/511cffe5eab8ea1355000012/image.jpg" class="img-fluid img-fluid-temp rounded" alt="...">
+		           <h1 class="h6 mb-0 mt-3 font-weight-bold text-light">Director</h1>
+		           <p class="text-gray-600">Jon Watts</p>
+		           <h1 class="h6 mb-0 mt-3 font-weight-bold text-light">Writers</h1>
+		           <p class="text-gray-600">Erik Sommers,Stan Lee,Chris McKenna</p>
+		           <h1 class="h6 mb-0 mt-3 font-weight-bold text-light">Starring</h1>
+		           <p class="text-gray-600">Tom Holland,Jake Gyllenhaal,Zendaya</p>
+		        </div>
+		    </div>
+
+	        <div class="col-xl-9 col-lg-9">
+
+	            <div class="info-header shadow rounded mb-4" >
+	               <div class="row d-flex align-items-center justify-content-between p-3">
+	                  <div class="col-lg-7 m-b-4">
+	                     <h3 class=" mb-0 mt-0 font-weight-bold text-light">Norsemen</h3>
+	                     <p class="mb-0"><small class="text-muted">Action / Adventure / Science Fiction / 3D</small></p>
+	                  </div>
+	                  <div class="col-lg-5 text-right">
+	                     <a href="#" class="d-sm-inline-block btn btn-danger shadow-sm"> Add to Watchlist</a>
+	                  </div>
+	               </div>
+	            </div>
+
+	            <div class="info-header shadow rounded mb-4">
+	               <div class="row d-flex align-items-center justify-content-between p-3">
+	                  <div class="col-lg-7 m-b-4">
+	                   <h1 class="h6 mb-0 mt-3 font-weight-bold text-light">Info</h1>
+	                   <p class="text-muted"><span>8.6</span> | <span>2018</span>|<span>70m</span>|<span>Norway</span></p>
+	                  </div>
+	               </div>
+	            </div>
+
+	            <div class="p-3 widget shadow rounded mb-4 about-fs">
+	               <ul class="nav nav-tabs" id="myTab" role="tablist">
+	                  <li class="nav-item">
+	                     <a class="nav-link text-light" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Summary</a>
+	                  </li>
+	                  <li class="nav-item">
+	                     <a class="nav-link text-light" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Cast
+	                     </a>
+	                  </li>
+	                  <li class="nav-item">
+	                     <a class="nav-link text-light active" id="videos-tab" data-toggle="tab" href="#videos" role="tab" aria-controls="videos" aria-selected="false">Seasons
+	                     </a>
+	                  </li>
+	                  <li class="nav-item">
+	                     <a class="nav-link text-light" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Reviews</a>
+	                  </li>
+	               </ul>
+	               <div class="tab-content" id="myTabContent">
+	                  <div class="tab-pane fade mt-3" id="home" role="tabpanel" aria-labelledby="home-tab">
+	                     <p class="text-gray-500">
+	                     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	                     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	                     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	                     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	                     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	                     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+	                     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	                     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	                     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	                     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	                     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	                     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+	                     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	                     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	                     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	                     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	                     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	                     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	                     </p>
+	                  </div>
+
+	                  <div class="tab-pane fade"id="profile" role="tabpanel" aria-labelledby="profile-tab">
+	                    <div class="row cast mt-4">
+	                        <div class="col-lg-3 col-md-4 col-6">
+	                           <div class="artist-list mb-4">
+	                              <a class="d-flex align-items-center" href="#">
+	                                 <div class="dropdown-list-image mr-3">
+	                                    <img class="rounded" src="https://th.bing.com/th/id/OIP.IRGtsbFZ8PY_ji5uMcGbNwHaEs?pid=Api&rs=1" alt="">
+	                                    <div class="status-indicator bg-success"></div>
+	                                 </div>
+	                                 <div class="font-weight-bold">
+	                                    <div class="text-truncate">Carla Gugino</div>
+	                                    <div class="small text-gray-500">Acting</div>
+	                                 </div>
+	                              </a>
+	                           </div>
+					     	</div> 
+	                        <div class="col-lg-3 col-md-4 col-6">
+	                           <div class="artist-list mb-4">
+	                              <a class="d-flex align-items-center" href="#">
+	                                 <div class="dropdown-list-image mr-3">
+	                                    <img class="rounded" src="http://4.bp.blogspot.com/-AJqtzhoMCO8/Ufn0bJ60y_I/AAAAAAAACA4/JSUQvMoqH-0/s1600/Scarlett+Johansson-2.jpg" alt="">
+	                                    <div class="status-indicator bg-success"></div>
+	                                 </div>
+	                                 <div class="font-weight-bold">
+	                                    <div class="text-truncate">Carla Gugino</div>
+	                                    <div class="small text-gray-500">Acting</div>
+	                                 </div>
+	                              </a>
+	                           </div>
+					     	</div>                        
+					     	<div class="col-lg-3 col-md-4 col-6">
+	                           <div class="artist-list mb-4">
+	                              <a class="d-flex align-items-center" href="#">
+	                                 <div class="dropdown-list-image mr-3">
+	                                    <img class="rounded" src="https://pmcdeadline2.files.wordpress.com/2016/02/rexfeatures_5599371cz.jpg?w=605" alt="">
+	                                    <div class="status-indicator bg-success"></div>
+	                                 </div>
+	                                 <div class="font-weight-bold">
+	                                    <div class="text-truncate">Carla Gugino</div>
+	                                    <div class="small text-gray-500">Acting</div>
+	                                 </div>
+	                              </a>
+	                           </div>
+					     	</div>                        
+					     	<div class="col-lg-3 col-md-4 col-6">
+	                           <div class="artist-list mb-4">
+	                              <a class="d-flex align-items-center" href="#">
+	                                 <div class="dropdown-list-image mr-3">
+	                                    <img class="rounded" src="https://pmcdeadline2.files.wordpress.com/2016/02/rexfeatures_5599371cz.jpg?w=605" alt="">
+	                                    <div class="status-indicator bg-success"></div>
+	                                 </div>
+	                                 <div class="font-weight-bold">
+	                                    <div class="text-truncate">Carla Gugino</div>
+	                                    <div class="small text-gray-500">Acting</div>
+	                                 </div>
+	                              </a>
+	                           </div>
+					     	</div>                        
+					     	<div class="col-lg-3 col-md-4 col-6">
+	                           <div class="artist-list mb-4">
+	                              <a class="d-flex align-items-center" href="#">
+	                                 <div class="dropdown-list-image mr-3">
+	                                    <img class="rounded" src="https://pmcdeadline2.files.wordpress.com/2016/02/rexfeatures_5599371cz.jpg?w=605" alt="">
+	                                    <div class="status-indicator bg-success"></div>
+	                                 </div>
+	                                 <div class="font-weight-bold">
+	                                    <div class="text-truncate">Carla Gugino</div>
+	                                    <div class="small text-gray-500">Acting</div>
+	                                 </div>
+	                              </a>
+	                           </div>
+					     	</div>
+	                     </div>
+	                  </div>
+
+	                  <div class="tab-pane fade show active" id="videos" role="tabpanel" aria-labelledby="videos-tab">
+	                     <div class="row mt-4">
+							<div class="container-fluid">
+								<div class="row">
+							 		<div class="col-xl-12 col-lg-12">
+									    <div class="filters filters-mobile mobile-filters bg-filters-mobile mb-4 d-none d-block d-md-none">
+									       <div>
+									          <a class="h6 text-decoration-none font-weight-bold text-light d-block m-0 p-3" data-toggle="collapse" href="#mobile-filters" role="button" aria-expanded="false" aria-controls="mobile-filters">Seasons</a>
+									       </div>
+									       <div id="mobile-filters" class="filters-body collapse multi-collapse">
+									          <div id="accordion">
+									             <div class="filters-card p-3">
+									                <div class="filters-card-header" id="headingOffer">
+									                   <h6 class="mb-1 ">
+									                      <a href="#" class="btn-link collapsed text-decoration-none text-light rotate" data-toggle="collapse" data-target="#collapseSort" aria-expanded="true" aria-controls="collapseSort">
+									                      Season 1:
+									                      </a>
+									                   </h6>
+									                </div>
+									                <div id="collapseSort" class="collapse show" aria-labelledby="headingOffer" data-parent="#accordion">
+									                   <div class="filters-card-body">
+									                      	<div class="container mt-3">
+																<ul class="list-group list-group-horizontal">
+																  <li class="list-group-item"><a href="#">Bolum 1</a></li>
+																  <li class="list-group-item"><p>Plot</p></li>
+																  <li class="list-group-item text-gray-500"><small>11 ekim 2020</small></li>
+																</ul>
+																<ul class="list-group list-group-horizontal">
+																  <li class="list-group-item"><a href="#">Bolum 1</a></li>
+																  <li class="list-group-item"><p>Plot</p></li>
+																  <li class="list-group-item text-gray-500"><small>11 ekim 2020</small></li>
+																</ul>
+																<ul class="list-group list-group-horizontal">
+																  <li class="list-group-item"><a href="#">Bolum 1</a></li>
+																  <li class="list-group-item"><p>Plot</p></li>
+																  <li class="list-group-item text-gray-500"><small>11 ekim 2020</small></li>
+																</ul>
+																<ul class="list-group list-group-horizontal">
+																  <li class="list-group-item"><a href="#">Bolum 1</a></li>
+																  <li class="list-group-item"><p>Plot</p></li>
+																  <li class="list-group-item text-gray-500"><small>11 ekim 2020</small></li>
+																</ul>
+															</div>
+									                   </div>
+									                </div>
+									             </div>
+									             <div class="filters-card p-3">
+									                <div class="filters-card-header" id="headingTwo">
+									                   <h6 class="mb-1">
+									                      <a href="#" class="btn-link text-decoration-none text-light rotate" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+									                      Season 2: 			                       
+									                      </a>
+									                   </h6>
+									                </div>
+									                <div id="collapsetwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+									                    <div class="filters-card-body">
+									                      	<div class="container mt-3">
+																<ul class="list-group list-group-horizontal">
+																  <li class="list-group-item"><a href="#">Bolum 1</a></li>
+																  <li class="list-group-item"><p>Plot</p></li>
+																  <li class="list-group-item text-gray-500"><small>11 ekim 2020</small></li>
+																</ul>
+																<ul class="list-group list-group-horizontal">
+																  <li class="list-group-item"><a href="#">Bolum 1</a></li>
+																  <li class="list-group-item"><p>Plot</p></li>
+																  <li class="list-group-item text-gray-500"><small>11 ekim 2020</small></li>
+																</ul>
+																<ul class="list-group list-group-horizontal">
+																  <li class="list-group-item"><a href="#">Bolum 1</a></li>
+																  <li class="list-group-item"><p>Plot</p></li>
+																  <li class="list-group-item text-gray-500"><small>11 ekim 2020</small></li>
+																</ul>
+																<ul class="list-group list-group-horizontal">
+																  <li class="list-group-item"><a href="#">Bolum 1</a></li>
+																  <li class="list-group-item"><p>Plot</p></li>
+																  <li class="list-group-item text-gray-500"><small>11 ekim 2020</small></li>
+																</ul>
+															</div>
+								                  	 	</div>
+									                </div>
+									             </div>
+									          </div>
+									       </div>
+									    </div>
+									    <div class="filters bg-filters-desktop rounded mb-3 d-none d-sm-none d-md-block seasons">
+									       	<div class="filters-body">
+									          	<div id="accordion">
+									             	<div class="filters-card p-3">
+										                <div class="filters-card-header" id="headingTwo">
+										                   	<h6 class="mb-1">
+									                      		<a href="#" class="btn-link collapsed text-light text-decoration-none" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+										                      	Season 1:
+										                      	</a>
+										                   	</h6>
+										                </div>
+									                <div id="collapsetwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+									                    <div class="filters-card-body">
+									                      	<div class="container mt-3">
+																<ul class="list-group list-group-horizontal">
+																  <li class="list-group-item"><a href="#">Bolum 1</a></li>
+																  <li class="list-group-item"><p>Plot</p></li>
+																  <li class="list-group-item text-gray-500"><small>11 ekim 2020</small></li>
+																</ul>
+																<ul class="list-group list-group-horizontal">
+																  <li class="list-group-item"><a href="#">Bolum 1</a></li>
+																  <li class="list-group-item"><p>Plot</p></li>
+																  <li class="list-group-item text-gray-500"><small>11 ekim 2020</small></li>
+																</ul>
+																<ul class="list-group list-group-horizontal">
+																  <li class="list-group-item"><a href="#">Bolum 1</a></li>
+																  <li class="list-group-item"><p>Plot</p></li>
+																  <li class="list-group-item text-gray-500"><small>11 ekim 2020</small></li>
+																</ul>
+																<ul class="list-group list-group-horizontal">
+																  <li class="list-group-item"><a href="#">Bolum 1</a></li>
+																  <li class="list-group-item"><p>Plot</p></li>
+																  <li class="list-group-item text-gray-500"><small>11 ekim 2020</small></li>
+																</ul>
+															</div>
+								                  	 	</div>
+									                </div>
+									             </div>
+									            	<div class="filters-card p-3">
+										                <div class="filters-card-header" id="headingOne">
+										                   <h6 class="mb-1">
+										                      <a href="#" class="btn-link text-light text-decoration-none rotate" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+										                      Season 2:
+										                      </a>
+										                   </h6>
+										                </div>
+										                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+										                    <div class="filters-card-body">
+										                      	<div class="container mt-3">
+																	<ul class="list-group list-group-horizontal">
+																	  <li class="list-group-item"><a href="#">Bolum 1</a></li>
+																	  <li class="list-group-item"><p>Plot</p></li>
+																	  <li class="list-group-item text-gray-500"><small>11 ekim 2020</small></li>
+																	</ul>
+																	<ul class="list-group list-group-horizontal">
+																	  <li class="list-group-item"><a href="#">Bolum 1</a></li>
+																	  <li class="list-group-item"><p>Plot</p></li>
+																	  <li class="list-group-item text-gray-500"><small>11 ekim 2020</small></li>
+																	</ul>
+																	<ul class="list-group list-group-horizontal">
+																	  <li class="list-group-item"><a href="#">Bolum 1</a></li>
+																	  <li class="list-group-item"><p>Plot</p></li>
+																	  <li class="list-group-item text-gray-500"><small>11 ekim 2020</small></li>
+																	</ul>
+																	<ul class="list-group list-group-horizontal">
+																	  <li class="list-group-item"><a href="#">Bolum 1</a></li>
+																	  <li class="list-group-item"><p>Plot</p></li>
+																	  <li class="list-group-item text-gray-500"><small>11 ekim 2020</small></li>
+																	</ul>
+																</div>
+									                  	 	</div>
+										                </div>
+									            	</div>
+								          		</div>
+								       		</div>
+								    	</div>
+								 	</div>
+								</div>
+							</div> 
+	                     </div>
+	                  </div>
+
+
+	                  <div class="tab-pane fade"  id="contact" role="tabpanel" aria-labelledby="contact-tab">
+	                    <div class="mt-4 send-review">
+	                        <form name="sentMessage">
+	                           	<div class="control-group form-group">
+								    <div class="row">
+								      <div class="col-12">
+								        <textarea id="review-send" placeholder="Leave a review..."></textarea>
+											<div class="row mt-3">
+												<div class="col-12 d-flex justify-content-between">
+							                      <div class="custom-control custom-checkbox">
+							                         <input type="checkbox" class="custom-control-input" id="spoiler-btn">
+							                         <label class="custom-control-label text-light" for="spoiler-btn">Spoiler var </label>
+							                      </div>
+													<button class="d-sm-inline-block btn btn-danger shadow-sm">send</button>
+												</div>
+											</div>
+								      	</div>
+								    </div>
+	                           	</div>
+	                        </form>
+	                     </div>
+	                     <div class="card-body p-0 reviews-card mt-4">
+	                        <div class="media mb-4">
+	                           <img class="d-flex mr-3 rounded-circle" width="50px" src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="">
+	                           <div class="media-body">
+	                              <div class="mt-0 mb-1">
+	                                 <span class="h6 mr-2 font-weight-bold text-light">Scarlett Johansson</span> <span class="text-gray-500"><i class="fa fa-calendar"></i> 2 saat once</span>
+	                              </div>
+	                              <p class="text-light m-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+	                           </div>
+	                        </div>
+<!-- 	                        <div class="media">
+	                           <img class="d-flex mr-3 rounded " src="https://cdn1.thr.com/sites/default/files/2015/06/johnny_depp_dior.jpg" alt="">
+	                           <div class="media-body">
+	                              <div class="mt-0 mb-1">
+	                                 <span class="h6 mr-2 font-weight-bold text-username">Johnny Depp</span> <span class="text-gray-500"><i class="fa fa-calendar"></i> Feb 12, 2018</span>
+	                              </div>
+	                              <p class="text-gray-500">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+	                              <div class="media mt-4">
+	                                 <img class="d-flex mr-3 rounded " src="https://th.bing.com/th/id/OIP.wvwNxJBc-Hhp7ZKKAg-bBAHaFj?pid=Api&rs=1" alt="">
+	                                 <div class="media-body">
+	                                    <div class="mt-0 mb-1">
+	                                       <span class="h6 mr-2 font-weight-bold text-username">Steve Jobs</span> <span class="text-gray-500"><i class="fa fa-calendar"></i> Feb 12, 2018</span>
+	                                    </div>
+	                                    <p class="text-gray-500">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+	                                 </div>
+	                              </div>
+	                           </div>
+	                        </div> -->
+	                        <div class="media mt-4">
+	                           <img class="d-flex mr-3 rounded-circle" width="50px" src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="">
+	                           <div class="media-body">
+	                              <div class="mt-0 mb-1">
+	                                 <span class="h6 mr-2 font-weight-bold text-light">Bill Gates</span> <span class="text-gray-500"><i class="fa fa-calendar"></i> Avg 15, 2020</span>
+	                              </div>
+	                              <p class="text-light m-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+	                           </div>
+	                        </div>
+	                     </div>
+	                  </div>
+	               </div>
+	            </div>
+	        </div>
+	      </div>
+	   </div>	
+	</section>
+	 
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="footer__content">
+						<span class="footer__copyright">© 2020 filmSite<br> Create by 
+							<a href="#" target="_blank">Khazar alians</a>
+						</span>
+
+						<nav class="footer__nav">
+							<a href="about.html">About Us</a>
+							<a href="contacts.html">Contacts</a>
+							<a href="privacy.html">Privacy Policy</a>
+						</nav>
+
+						<a href="#nav" class="footer__back">
+							<i class="fa fa-arrow-up" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+ 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+ 
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+		    $('.hamburger_button').on('click', function () {
+		        $('.animated-icon1').toggleClass('open');
+		        $('.linetwo').toggleClass('disabble')
+		    });
+		});
+
+        // $('.send-review-textarea').on('input', function () { 
+        //     this.style.height = 'auto'; 
+        //     this.style.height = (this.scrollHeight) + 'px'; 
+        // });
+
+	  $(document).ready(function() {
+	    $("#review-send").emojioneArea({
+	      autoHideFilters: true,
+	      pickerPosition: "bottom",
+	      search: false,
+	      tones: false
+	    });
+	  });
+	</script>
+</body>
+</html>

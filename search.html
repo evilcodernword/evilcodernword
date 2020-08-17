@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>search</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg mb-5">
+      <div class="container">
+		<a class="navbar-brand text-light" href="#">Logo</a>
+		<button class="navbar-toggler hamburger_button border-0" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+		    <div class="animated-icon1 border-0"><span></span><span></span><span></span></div>
+		</button>
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">neyse</a>
+            </li>
+          </ul>
+        <form class="navbar-form mr-1" role="search">
+	        <div class="input-group">
+	            <input type="text" class="form-control search-nav-bar" placeholder="Search" name="srch-term" id="srch-term">
+	            <div class="input-group-btn search_button_header">
+	                <button class="btn search_button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+	            </div>
+	        </div>
+        </form>
+           <a type="button" href="#" class="nav-link btn signup_header">SIGN UP</a>
+        </div>
+      </div>
+    </nav>	
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+		            <div class="card card-list">
+		              <div class="card__cover">
+		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+		                <a href="#" class="card__play">
+		                  <i class="fa fa-play" aria-hidden="true"></i>
+		                </a>
+		                <a class="details" href="moviedetail.html">details</a>
+		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+		                <span class="card__year">2020</span>
+		              </div>
+		              <div class="card__content">
+		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+		                <span class="card__category">
+		                    <a href="#">Action</a>
+		                    <a href="#">Triler</a>
+		                </span>
+		              </div>
+		            </div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+		            <div class="card card-list">
+		              <div class="card__cover">
+		                <img src="https://cdn.dribbble.com/users/683081/screenshots/2728654/exfuse_app_main_nocontent.png" alt="">
+		              </div>
+		            </div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+ 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+		    $('.hamburger_button').on('click', function () {
+		        $('.animated-icon1').toggleClass('open');
+		        $('.linetwo').toggleClass('disabble')
+		    });
+		});
+	</script>
+</body>
+</html>
