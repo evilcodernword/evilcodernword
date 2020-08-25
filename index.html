@@ -1,1000 +1,1017 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
-  	<link rel="stylesheet" type="text/css" href="plugins/mervick/dist/emojionearea.css" media="screen">
-  	<link rel="stylesheet" type="text/css" href="plugins/mervick/tomorrow.css" media="screen">
-  	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Description" content="Author: A.N. Author,
+	    Illustrator: P. Picture, Category: Books, Price: $17.99,
+	    Length: 784 pages">
+		<title>Home</title>
+	    <link rel="canonical" href="https://evilcodernword.github.io/evilcodernword/index.html"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
+	  	<link rel="stylesheet" type="text/css" href="plugins/mervick/dist/emojionearea.css" media="screen">
+	  	<link rel="stylesheet" type="text/css" href="plugins/mervick/tomorrow.css" media="screen">
+	  	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
 
-  	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-</head>
-<body>
-	<div class="close-page-gradient d-none" ></div>
+	  	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	</head>
+	<body>
+		<div class="close-page-gradient d-none" ></div>
 
-	<nav class="navbar navbar-expand-lg sticky-top mb-4" id="nav">
-      <div class="container">
-		<a class="navbar-brand text-light" href="#">Logo</a>
-		<button class="navbar-toggler hamburger_button border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-		    <div class="animated-icon1 border-0"><span></span><span></span><span></span></div>
-		</button>
-        <div class="collapse navbar-collapse width" id="navbar">
-          <ul class="navbar-nav mr-auto">
-          	<li class="nav-item dropdown profile-on-navbar">
-		        <a class="nav-link text-light dropdown-toggle" href="#" id="profileOnNavbar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Profile
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="profileOnNavbar">
-		          <a class="dropdown-item" href="profile.html">Watchlist</a>
-		          <a class="dropdown-item" href="profile.html">Setting</a>
-		          <a href="#" class="dropdown-item">
-				  	Notifications <span class="badge badge-light">400</span>
-				  </a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">Sign out</a>
+		<nav class="navbar navbar-expand-lg sticky-top mb-4" id="nav">
+	      <div class="container">
+			<a class="navbar-brand text-light" href="#">Logo</a>
+			<button class="navbar-toggler hamburger_button border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+			    <div class="animated-icon1 border-0"><span></span><span></span><span></span></div>
+			</button>
+	        <div class="collapse navbar-collapse width" id="navbar">
+	          <ul class="navbar-nav mr-auto">
+	          	<li class="nav-item dropdown profile-on-navbar">
+			        <a class="nav-link text-light dropdown-toggle" href="#" id="profileOnNavbar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Profile
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="profileOnNavbar">
+			          <a class="dropdown-item" href="profile.html">Watchlist</a>
+			          <a class="dropdown-item" href="profile.html">Setting</a>
+			          <a href="#" class="dropdown-item">
+					  	Notifications <span class="badge badge-light">400</span>
+					  </a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Sign out</a>
+			        </div>
+		      	</li>
+	            <li class="nav-item active">
+	              <a class="nav-link text-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link text-light" href="people.html">People</a>
+	            </li>
+	          </ul>
+	        <form class="navbar-form mr-1" role="search">
+		        <div class="input-group search-on-nav">
+		            <input type="text" class="form-control search-nav-bar" placeholder="Search" name="srch-term" id="srch-term">
+		            <div class="input-group-btn search_button_header">
+		                <button class="btn search_button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+		            </div>
 		        </div>
-	      	</li>
-            <li class="nav-item active">
-              <a class="nav-link text-light" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="people.html">People</a>
-            </li>
-          </ul>
-        <form class="navbar-form mr-1" role="search">
-	        <div class="input-group search-on-nav">
-	            <input type="text" class="form-control search-nav-bar" placeholder="Search" name="srch-term" id="srch-term">
-	            <div class="input-group-btn search_button_header">
-	                <button class="btn search_button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-	            </div>
+	        </form>
+	      		<ul class="navbar-nav">
+	        		<li class="nav-item">
+						<a type="button" href="signup.html" class="nav-link btn signup_header">SIGN UP</a>            	
+					</li>
+	      		</ul>
 	        </div>
-        </form>
-      		<ul class="navbar-nav">
-        		<li class="nav-item">
-					<a type="button" href="signup.html" class="nav-link btn signup_header">SIGN UP</a>            	
-				</li>
-      		</ul>
-        </div>
-      </div>
-    </nav>
+	      </div>
+	    </nav>
 
-	<div class="story-line">
-		<div class="container">
-			<div class="row " >
-				<div class="story col-12 col-sm-12 col-md-12 col-lg-6 mb-4" style="max-height: auto;">
-					<div>
-					  	<div class="circle">
-					  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/ndl1W4ltcmg" data-target="#storyModal">
-					  			<img src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="" />
-					  		</a>					   
-						  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
-						     xml:space="preserve">  
-						    <circle cx="50" cy="50" r="40" />
-						  </svg>
+		<div class="story-line">
+			<div class="container">
+				<div class="row">
+					<div class="story col-12 col-sm-12 col-md-12 col-lg-6 mb-4" id="app2" style="max-height: auto;">
+						<div v-for="story in stories">
+						  	<div class="circle">
+						  		<a class="storyButton" href="#" data-toggle="modal" :data-src="story.src" data-target="#storyModal">
+						  			<img :src="story.coverpic" alt="" />
+						  		</a>					   
+							  	<svg viewBox="0 0 100 100" style="enable-background:new -580 439 577.9 194;">  
+							    	<circle cx="50" cy="50" r="40" />
+							  	</svg>
+							</div>
+							<div class="col-12 text-center text-truncate text-light">
+							   {{ story.name }}
+							</div>
+					 	</div>
+<!-- 						<div>
+						  	<div class="circle">
+						  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/ndl1W4ltcmg" data-target="#storyModal">
+						  			<img src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="" />
+						  		</a>					   
+							  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
+							     xml:space="preserve">  
+							    <circle cx="50" cy="50" r="40" />
+							  </svg>
+							</div>
+							<div class="col-12 text-center text-truncate text-light">
+							    The Witcher
+							</div>
+					 	</div>
+						<div>
+						  	<div class="circle">
+						  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/ndl1W4ltcmg" data-target="#storyModal">
+						  			<img src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="" />
+						  		</a>					   
+							  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
+							     xml:space="preserve">  
+							    <circle cx="50" cy="50" r="40" />
+							  </svg>
+							</div>
+							<div class="col-12 text-center text-truncate text-light">
+							    The Witcher
+							</div>
 						</div>
-						<div class="col-12 text-center text-truncate text-light">
-						    The Witcher
+						<div>
+						  	<div class="circle">
+						  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/L3pk_TBkihU" data-target="#storyModal">
+						  			<img src="https://gizmostory.com/wp-content/uploads/2020/06/Tenet-300x300-1.jpg" alt="" />
+						  		</a>					   
+							  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
+							     xml:space="preserve">  
+							    <circle cx="50" cy="50" r="40" />
+							  </svg>
+							</div>
+							  <div class="col-12 text-center text-truncate text-light">
+							    TENET
+							  </div>
 						</div>
-				 	</div>
-					<div>
-					  	<div class="circle">
-					  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/ndl1W4ltcmg" data-target="#storyModal">
-					  			<img src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="" />
-					  		</a>					   
-						  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
-						     xml:space="preserve">  
-						    <circle cx="50" cy="50" r="40" />
-						  </svg>
+						<div>
+						  	<div class="circle">
+						  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/ndl1W4ltcmg" data-target="#storyModal">
+						  			<img src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="" />
+						  		</a>					   
+							  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
+							     xml:space="preserve">  
+							    <circle cx="50" cy="50" r="40" />
+							  </svg>
+							</div>
+							  <div class="col-12 text-center text-truncate text-light">
+							   The Witcher
+							  </div>
 						</div>
-						<div class="col-12 text-center text-truncate text-light">
-						    The Witcher
+						<div>
+						  	<div class="circle">
+						  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/ndl1W4ltcmg" data-target="#storyModal">
+						  			<img src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="" />
+						  		</a>					   
+							  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
+							     xml:space="preserve">  
+							    <circle cx="50" cy="50" r="40" />
+							  </svg>
+							</div>
+							  <div class="col-12 text-center text-truncate text-light">
+							    The Witcher
+							  </div>
 						</div>
-				 	</div>
-					<div>
-					  	<div class="circle">
-					  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/ndl1W4ltcmg" data-target="#storyModal">
-					  			<img src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="" />
-					  		</a>					   
-						  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
-						     xml:space="preserve">  
-						    <circle cx="50" cy="50" r="40" />
-						  </svg>
+						<div>
+						  	<div class="circle">
+						  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/ndl1W4ltcmg" data-target="#storyModal">
+						  			<img src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="" />
+						  		</a>					   
+							  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
+							     xml:space="preserve">  
+							    <circle cx="50" cy="50" r="40" />
+							  </svg>
+							</div>
+							  <div class="col-12 text-center text-truncate text-light">
+							    The Witcher
+							  </div>
 						</div>
-						<div class="col-12 text-center text-truncate text-light">
-						    The Witcher
+						<div>
+						  	<div class="circle">
+						  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/ndl1W4ltcmg" data-target="#storyModal">
+						  			<img src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="" />
+						  		</a>					   
+							  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
+							     xml:space="preserve">  
+							    <circle cx="50" cy="50" r="40" />
+							  </svg>
+							</div>
+							  <div class="col-12 text-center text-truncate text-light">
+							    The Witcher
+							  </div>
 						</div>
+						<div>
+						  	<div class="circle">
+						  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/ndl1W4ltcmg" data-target="#storyModal">
+						  			<img src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="" />
+						  		</a>					   
+							  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
+							     xml:space="preserve">  
+							    <circle cx="50" cy="50" r="40" />
+							  </svg>
+							</div>
+							  <div class="col-12 text-center text-truncate text-light">
+							    The Witchersssssssss
+							  </div>
+						</div> -->
+					</div>	
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4 reklam-top">
+						<img class="mh-100 mw-100" src="https://www.kirikkale24.com/wp-content/themes/un-haber-1/images/reklam-ver-1.gif" alt="reklam">
 					</div>
-					<div>
-					  	<div class="circle">
-					  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/L3pk_TBkihU" data-target="#storyModal">
-					  			<img src="https://gizmostory.com/wp-content/uploads/2020/06/Tenet-300x300-1.jpg" alt="" />
-					  		</a>					   
-						  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
-						     xml:space="preserve">  
-						    <circle cx="50" cy="50" r="40" />
-						  </svg>
-						</div>
-						  <div class="col-12 text-center text-truncate text-light">
-						    TENET
-						  </div>
-					</div>
-					<div>
-					  	<div class="circle">
-					  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/ndl1W4ltcmg" data-target="#storyModal">
-					  			<img src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="" />
-					  		</a>					   
-						  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
-						     xml:space="preserve">  
-						    <circle cx="50" cy="50" r="40" />
-						  </svg>
-						</div>
-						  <div class="col-12 text-center text-truncate text-light">
-						   The Witcher
-						  </div>
-					</div>
-					<div>
-					  	<div class="circle">
-					  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/ndl1W4ltcmg" data-target="#storyModal">
-					  			<img src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="" />
-					  		</a>					   
-						  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
-						     xml:space="preserve">  
-						    <circle cx="50" cy="50" r="40" />
-						  </svg>
-						</div>
-						  <div class="col-12 text-center text-truncate text-light">
-						    The Witcher
-						  </div>
-					</div>
-					<div>
-					  	<div class="circle">
-					  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/ndl1W4ltcmg" data-target="#storyModal">
-					  			<img src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="" />
-					  		</a>					   
-						  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
-						     xml:space="preserve">  
-						    <circle cx="50" cy="50" r="40" />
-						  </svg>
-						</div>
-						  <div class="col-12 text-center text-truncate text-light">
-						    The Witcher
-						  </div>
-					</div>
-					<div>
-					  	<div class="circle">
-					  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/ndl1W4ltcmg" data-target="#storyModal">
-					  			<img src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="" />
-					  		</a>					   
-						  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
-						     xml:space="preserve">  
-						    <circle cx="50" cy="50" r="40" />
-						  </svg>
-						</div>
-						  <div class="col-12 text-center text-truncate text-light">
-						    The Witcher
-						  </div>
-					</div>
-					<div>
-					  	<div class="circle">
-					  		<a class="storyButton" href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/ndl1W4ltcmg" data-target="#storyModal">
-					  			<img src="https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1" alt="" />
-					  		</a>					   
-						  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
-						     xml:space="preserve">  
-						    <circle cx="50" cy="50" r="40" />
-						  </svg>
-						</div>
-						  <div class="col-12 text-center text-truncate text-light">
-						    The Witchersssssssss
-						  </div>
-					</div>
-				</div>	
-				<div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4 reklam-top">
-					<img class="mh-100 mw-100" src="https://www.kirikkale24.com/wp-content/themes/un-haber-1/images/reklam-ver-1.gif">
 				</div>
 			</div>
 		</div>
-	</div>
-<!-- Modal -->
-	<div class="modal fade" id="storyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  	<div class="modal-dialog modal-dialog-centered" role="document">
-	    	<div class="modal-content">
-	        <!-- 16:9 aspect ratio -->
-				<div class="embed-responsive embed-responsive-16by9">
-	  				<iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-				</div>
-	    	</div>
-	  	</div>
-	</div> 
-	<section>
-		<div class="container-fluid filter-part">
-			<div class="row">
-				<div class="col-xl-3 col-lg-4">
-			    	<div class="filters filters-mobile mobile-filters rounded bg-filters-mobile mb-4 d-none d-block d-md-none">
-			       <div class="border-bottom-mobile">
-			          <a class="h6 text-decoration-none font-weight-bold text-light d-block m-0 p-3" data-toggle="collapse" href="#mobile-filters" role="button" aria-expanded="false" aria-controls="mobile-filters">Filters<i class="fa fa-arrow-down float-right mt-1" aria-hidden="true"></i></a>
-			       </div>
-			       <div id="mobile-filters" class="filters-body collapse multi-collapse">
-			          <div id="accordion">
-			             <div class="filters-card p-3">
-			                <div class="filters-card-header" id="headingOffer">
-			                   <h6 class="mb-1 ">
-			                      <a href="#" class="btn-link text-decoration-none text-light rotate" data-toggle="collapse" data-target="#collapseSort" aria-expanded="true" aria-controls="collapseSort">
-			                      Sort by movies/series
-			                      </a>
-			                   </h6>
-			                </div>
-			                <div id="collapseSort" class="collapse" aria-labelledby="headingOffer" data-parent="#accordion">
-			                   <div class="filters-card-body card-shop-filters">
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="Relevance">
-			                         <label class="custom-control-label" for="Relevance">Relevance </label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="PriceLtH">
-			                         <label class="custom-control-label" for="PriceLtH">IMDB <small>(Low to Hig)</small>
-			                         </label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="PriceHtL">
-			                         <label class="custom-control-label" for="PriceHtL">IMDB <small>(High to Low)</small>
-			                         </label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="Discount">
-			                         <label class="custom-control-label" for="Discount">Discount <small>(A-Z)</small>
-			                         </label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="Name">
-			                         <label class="custom-control-label" for="Name">Name <small>(A-Z)</small>
-			                         </label>
-			                      </div>
-			                   </div>
-			                </div>
-			             </div>
-			             <div class="filters-card p-3">
-			                <div class="filters-card-header" id="headingTwo">
-			                   <h6 class="mb-1">
-			                      <a href="#" class="btn-link text-decoration-none text-light rotate" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
-			                      Type
-			                       
-			                      </a>
-			                   </h6>
-			                </div>
-			                <div id="collapsetwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" style="">
-			                   <div class="filters-card-body card-shop-filters">
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="Action">
-			                         <label class="custom-control-label" for="Action">Action <small>156</small></label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="Adventure">
-			                         <label class="custom-control-label" for="Adventure">Adventure <small>120</small></label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="Animation">
-			                         <label class="custom-control-label" for="Animation">Animation <small>130</small></label>
-			                      </div>
-			                   </div>
-			                </div>
-			             </div>
-			             <div class="filters-card p-3">
-			                <div class="filters-card-header" id="headingThree">
-			                   <h6 class="mb-1">
-			                      <a href="#" class="btn-link collapsed text-decoration-none text-light" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-			                      Select Language
-			                      </a>
-			                   </h6>
-			                </div>
-			                <div id="collapseOne" class="collapse" aria-labelledby="headingThree" data-parent="#accordion" style="">
-			                   <div class="filters-card-body card-shop-filters">
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="Russian">
-			                         <label class="custom-control-label" for="Russian">Russian <small>230</small>
-			                         </label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="English">
-			                         <label class="custom-control-label" for="English">English <small>95</small>
-			                         </label>
-			                      </div>
-			                   </div>
-			                </div>
-			             </div>
-			          </div>
-			       </div>
-			    	</div>
-			    	<div class="filters bg-filters-desktop rounded mb-3 d-none d-sm-none d-md-block">
-			       <div class="filters-header border-bottom-mobile p-3">
-			          <h6 class="m-0 text-light">Filter By</h6>
-			       </div>
-			       <div class="filters-body">
-			          <div id="accordion">
-			             <div class="filters-card p-3">
-			                <div class="filters-card-header" id="typeForDesktopHeader">
-			                   <h6 class="mb-1">
-			                      <a href="#" class="btn-link collapsed text-light text-decoration-none rotate" data-toggle="collapse" data-target="#typefordesktop" aria-expanded="true" aria-controls="typefordesktop">
-			                      Type
-			                      <i class="fa fa-arrow-down float-right mt-1" aria-hidden="true"></i>
-			                      </a>
-			                   </h6>
-			                </div>
-			                <div id="typefordesktop" class="collapse show" aria-labelledby="typeForDesktopHeader" data-parent="#accordion" style="">
-			                   <div class="filters-card-body card-shop-filters">
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="ActionD">
-			                         <label class="custom-control-label" for="ActionD">Action <small>156</small></label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="AdventureD">
-			                         <label class="custom-control-label" for="AdventureD">Adventure <small>120</small></label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="AnimationD">
-			                         <label class="custom-control-label" for="AnimationD">Animation <small>130</small></label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="ComedyD">
-			                         <label class="custom-control-label" for="ComedyD">Comedy <small>120</small></label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="CrimeD">
-			                         <label class="custom-control-label" for="CrimeD"> Crime <small>111</small></label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="DramaD">
-			                         <label class="custom-control-label" for="DramaD"> Drama <small>95</small></label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="FantasyD">
-			                         <label class="custom-control-label" for="FantasyD"> Fantasy <small>50</small></label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="HistoricalD">
-			                         <label class="custom-control-label" for="HistoricalD"> Historical <small>32</small></label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="RomanticD">
-			                         <label class="custom-control-label" for="RomanticD"> Romantic <small>156</small></label>
-			                      </div>
-			                   </div>
-			                </div>
-			             </div>
-			             <div class="filters-card p-3">
-			                <div class="filters-card-header" id="selectLanguage">
-			                   <h6 class="mb-1">
-			                      <a href="#" class="btn-link text-light text-decoration-none rotate down" data-toggle="collapse" data-target="#select-language" aria-expanded="false" aria-controls="select-language">
-			                      Select Language <i class="fa fa-arrow-down float-right mt-1 rotate" aria-hidden="true"></i>
-			                      </a>
-			                   </h6>
-			                </div>
-			                <div id="select-language" class="collapse" aria-labelledby="selectLanguage" data-parent="#accordion">
-			                   <div class="filters-card-body card-shop-filters">
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="RussianD">
-			                         <label class="custom-control-label" for="RussianD"> Russian <small>230</small>
-			                         </label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="EnglishD">
-			                         <label class="custom-control-label" for="EnglishD"> English <small>95</small>
-			                         </label>
-			                      </div>
-			                      <div class="custom-control custom-checkbox">
-			                         <input type="checkbox" class="custom-control-input" id="TurkeyD">
-			                         <label class="custom-control-label" for="TurkeyD"> Turkey <small>35</small>
-			                         </label>
-			                      </div>
-			                   </div>
-			                </div>
-			             </div>
-	 		             <div class="filters-card p-3">
-			                <div class="filters-card-header" id="SortedBy">
-			                   <h6 class="mb-1">
-			                      <a href="#" class="btn-link text-light text-decoration-none rotate down" data-toggle="collapse" data-target="#Sorted-by" aria-expanded="false" aria-controls="Sorted-by">
-			                      Sorted by <i class="fa fa-arrow-down float-right mt-1 rotate" aria-hidden="true"></i>
-			                      </a>
-			                   </h6>
-			                </div>
-			                <div id="Sorted-by" class="collapse" aria-labelledby="SortedBy" data-parent="#accordion" style="">
+		<!-- Modal -->
+		<div class="modal fade" id="storyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered" role="document">
+		    	<div class="modal-content">
+		        <!-- 16:9 aspect ratio -->
+					<div class="embed-responsive embed-responsive-16by9">
+		  				<iframe title="story" class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay" aria-hidden="true"></iframe>
+					</div>
+		    	</div>
+		  	</div>
+		</div> 
+		<section>
+			<div class="container-fluid filter-part">
+				<div class="row">
+					<div class="col-xl-3 col-lg-4">
+				    	<div class="filters filters-mobile mobile-filters rounded bg-filters-mobile mb-4 d-none d-block d-md-none">
+				       <div class="border-bottom-mobile">
+				          <a class="h6 text-decoration-none font-weight-bold text-light d-block m-0 p-3" data-toggle="collapse" href="#mobile-filters" role="button" aria-expanded="false" aria-controls="mobile-filters">Filters<i class="fa fa-arrow-down float-right mt-1" aria-hidden="true"></i></a>
+				       </div>
+				       <div id="mobile-filters" class="filters-body collapse multi-collapse">
+				          <div id="accordion">
+				             <div class="filters-card p-3">
+				                <div class="filters-card-header" id="headingOffer">
+				                   <h6 class="mb-1 ">
+				                      <a href="#" class="btn-link text-decoration-none text-light rotate" data-toggle="collapse" data-target="#collapseSort" aria-expanded="true" aria-controls="collapseSort">
+				                      Sort by movies/series
+				                      </a>
+				                   </h6>
+				                </div>
+				                <div id="collapseSort" class="collapse" aria-labelledby="headingOffer" data-parent="#accordion">
 				                   <div class="filters-card-body card-shop-filters">
 				                      <div class="custom-control custom-checkbox">
-				                         <input type="checkbox" class="custom-control-input " id="RelevanceD">
-				                         <label class="custom-control-label" for="RelevanceD">Relevance </label>
+				                         <input type="checkbox" class="custom-control-input" id="Relevance">
+				                         <label class="custom-control-label" for="Relevance">Relevance </label>
 				                      </div>
 				                      <div class="custom-control custom-checkbox">
-				                         <input type="checkbox" class="custom-control-input" id="PriceLtHD">
-				                         <label class="custom-control-label" for="PriceLtHD">IMDB <small>(Low to Hig)</small>
+				                         <input type="checkbox" class="custom-control-input" id="PriceLtH">
+				                         <label class="custom-control-label" for="PriceLtH">IMDB <small>(Low to Hig)</small>
 				                         </label>
 				                      </div>
 				                      <div class="custom-control custom-checkbox">
-				                         <input type="checkbox" class="custom-control-input" id="PriceHtLD">
-				                         <label class="custom-control-label" for="PriceHtLD">IMDB <small>(High to Low)</small>
+				                         <input type="checkbox" class="custom-control-input" id="PriceHtL">
+				                         <label class="custom-control-label" for="PriceHtL">IMDB <small>(High to Low)</small>
 				                         </label>
 				                      </div>
 				                      <div class="custom-control custom-checkbox">
-				                         <input type="checkbox" class="custom-control-input" id="DiscountD">
-				                         <label class="custom-control-label" for="DiscountD">Discount <small>(A-Z)</small>
+				                         <input type="checkbox" class="custom-control-input" id="Discount">
+				                         <label class="custom-control-label" for="Discount">Discount <small>(A-Z)</small>
 				                         </label>
 				                      </div>
 				                      <div class="custom-control custom-checkbox">
-				                         <input type="checkbox" class="custom-control-input" id="NameD">
-				                         <label class="custom-control-label" for="NameD">Name <small>(A-Z)</small>
+				                         <input type="checkbox" class="custom-control-input" id="Name">
+				                         <label class="custom-control-label" for="Name">Name <small>(A-Z)</small>
 				                         </label>
 				                      </div>
-			                   		</div>
-		                		</div>
-		             		</div>
-		          		</div>
-		       		</div>
-		    		</div>
-		 		</div>
-			<div class="col-xl-9 col-lg-8">
-		        <div class="row"  id="app">
-		          	<div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4" v-for='sizes in size'>
+				                   </div>
+				                </div>
+				             </div>
+				             <div class="filters-card p-3">
+				                <div class="filters-card-header" id="headingTwo">
+				                   <h6 class="mb-1">
+				                      <a href="#" class="btn-link text-decoration-none text-light rotate" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+				                      Type
+				                       
+				                      </a>
+				                   </h6>
+				                </div>
+				                <div id="collapsetwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" style="">
+				                   <div class="filters-card-body card-shop-filters">
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="Action">
+				                         <label class="custom-control-label" for="Action">Action <small>156</small></label>
+				                      </div>
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="Adventure">
+				                         <label class="custom-control-label" for="Adventure">Adventure <small>120</small></label>
+				                      </div>
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="Animation">
+				                         <label class="custom-control-label" for="Animation">Animation <small>130</small></label>
+				                      </div>
+				                   </div>
+				                </div>
+				             </div>
+				             <div class="filters-card p-3">
+				                <div class="filters-card-header" id="headingThree">
+				                   <h6 class="mb-1">
+				                      <a href="#" class="btn-link collapsed text-decoration-none text-light" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+				                      Select Language
+				                      </a>
+				                   </h6>
+				                </div>
+				                <div id="collapseOne" class="collapse" aria-labelledby="headingThree" data-parent="#accordion" style="">
+				                   <div class="filters-card-body card-shop-filters">
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="Russian">
+				                         <label class="custom-control-label" for="Russian">Russian <small>230</small>
+				                         </label>
+				                      </div>
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="English">
+				                         <label class="custom-control-label" for="English">English <small>95</small>
+				                         </label>
+				                      </div>
+				                   </div>
+				                </div>
+				             </div>
+				          </div>
+				       </div>
+				    	</div>
+				    	<div class="filters bg-filters-desktop rounded mb-3 d-none d-sm-none d-md-block">
+				       <div class="filters-header border-bottom-mobile p-3">
+				          <h6 class="m-0 text-light">Filter By</h6>
+				       </div>
+				       <div class="filters-body">
+				          <div id="accordion">
+				             <div class="filters-card p-3">
+				                <div class="filters-card-header" id="typeForDesktopHeader">
+				                   <h6 class="mb-1">
+				                      <a href="#" class="btn-link collapsed text-light text-decoration-none rotate" data-toggle="collapse" data-target="#typefordesktop" aria-expanded="true" aria-controls="typefordesktop">
+				                      Type
+				                      <i class="fa fa-arrow-down float-right mt-1" aria-hidden="true"></i>
+				                      </a>
+				                   </h6>
+				                </div>
+				                <div id="typefordesktop" class="collapse show" aria-labelledby="typeForDesktopHeader" data-parent="#accordion" style="">
+				                   <div class="filters-card-body card-shop-filters">
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="ActionD">
+				                         <label class="custom-control-label" for="ActionD">Action <small>156</small></label>
+				                      </div>
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="AdventureD">
+				                         <label class="custom-control-label" for="AdventureD">Adventure <small>120</small></label>
+				                      </div>
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="AnimationD">
+				                         <label class="custom-control-label" for="AnimationD">Animation <small>130</small></label>
+				                      </div>
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="ComedyD">
+				                         <label class="custom-control-label" for="ComedyD">Comedy <small>120</small></label>
+				                      </div>
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="CrimeD">
+				                         <label class="custom-control-label" for="CrimeD"> Crime <small>111</small></label>
+				                      </div>
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="DramaD">
+				                         <label class="custom-control-label" for="DramaD"> Drama <small>95</small></label>
+				                      </div>
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="FantasyD">
+				                         <label class="custom-control-label" for="FantasyD"> Fantasy <small>50</small></label>
+				                      </div>
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="HistoricalD">
+				                         <label class="custom-control-label" for="HistoricalD"> Historical <small>32</small></label>
+				                      </div>
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="RomanticD">
+				                         <label class="custom-control-label" for="RomanticD"> Romantic <small>156</small></label>
+				                      </div>
+				                   </div>
+				                </div>
+				             </div>
+				             <div class="filters-card p-3">
+				                <div class="filters-card-header" id="selectLanguage">
+				                   <h6 class="mb-1">
+				                      <a href="#" class="btn-link text-light text-decoration-none rotate down" data-toggle="collapse" data-target="#select-language" aria-expanded="false" aria-controls="select-language">
+				                      Select Language <i class="fa fa-arrow-down float-right mt-1 rotate" aria-hidden="true"></i>
+				                      </a>
+				                   </h6>
+				                </div>
+				                <div id="select-language" class="collapse" aria-labelledby="selectLanguage" data-parent="#accordion">
+				                   <div class="filters-card-body card-shop-filters">
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="RussianD">
+				                         <label class="custom-control-label" for="RussianD"> Russian <small>230</small>
+				                         </label>
+				                      </div>
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="EnglishD">
+				                         <label class="custom-control-label" for="EnglishD"> English <small>95</small>
+				                         </label>
+				                      </div>
+				                      <div class="custom-control custom-checkbox">
+				                         <input type="checkbox" class="custom-control-input" id="TurkeyD">
+				                         <label class="custom-control-label" for="TurkeyD"> Turkey <small>35</small>
+				                         </label>
+				                      </div>
+				                   </div>
+				                </div>
+				             </div>
+		 		             <div class="filters-card p-3">
+				                <div class="filters-card-header" id="SortedBy">
+				                   <h6 class="mb-1">
+				                      <a href="#" class="btn-link text-light text-decoration-none rotate down" data-toggle="collapse" data-target="#Sorted-by" aria-expanded="false" aria-controls="Sorted-by">
+				                      Sorted by <i class="fa fa-arrow-down float-right mt-1 rotate" aria-hidden="true"></i>
+				                      </a>
+				                   </h6>
+				                </div>
+				                <div id="Sorted-by" class="collapse" aria-labelledby="SortedBy" data-parent="#accordion" style="">
+					                   <div class="filters-card-body card-shop-filters">
+					                      <div class="custom-control custom-checkbox">
+					                         <input type="checkbox" class="custom-control-input " id="RelevanceD">
+					                         <label class="custom-control-label" for="RelevanceD">Relevance </label>
+					                      </div>
+					                      <div class="custom-control custom-checkbox">
+					                         <input type="checkbox" class="custom-control-input" id="PriceLtHD">
+					                         <label class="custom-control-label" for="PriceLtHD">IMDB <small>(Low to Hig)</small>
+					                         </label>
+					                      </div>
+					                      <div class="custom-control custom-checkbox">
+					                         <input type="checkbox" class="custom-control-input" id="PriceHtLD">
+					                         <label class="custom-control-label" for="PriceHtLD">IMDB <small>(High to Low)</small>
+					                         </label>
+					                      </div>
+					                      <div class="custom-control custom-checkbox">
+					                         <input type="checkbox" class="custom-control-input" id="DiscountD">
+					                         <label class="custom-control-label" for="DiscountD">Discount <small>(A-Z)</small>
+					                         </label>
+					                      </div>
+					                      <div class="custom-control custom-checkbox">
+					                         <input type="checkbox" class="custom-control-input" id="NameD">
+					                         <label class="custom-control-label" for="NameD">Name <small>(A-Z)</small>
+					                         </label>
+					                      </div>
+				                   		</div>
+			                		</div>
+			             		</div>
+			          		</div>
+			       		</div>
+			    		</div>
+			 		</div>
+				<div class="col-xl-9 col-lg-8">
+			        <div class="row"  id="app">
+			          	<div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4" v-for='sizes in size'>
+				            <div class="card card-list">
+				              	<div class="card__cover">
+					                <img :src="image"  alt="Tenet">
+					                <a href="filmsablon.html" class="card__play">
+					                  <i class="fa fa-play" aria-hidden="true"></i>
+					                </a>
+					                <a class="details" href="moviedetail.html">details</a>
+					                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+					                <span class="card__year">2020</span>
+				              	</div>
+				              	<div class="card__content">
+				                	<h3 class="card__title"><a href="filmsablon.html">Tenet</a></h3>
+				                	<span class="card__category">
+				                    	<a href="#">Action</a>
+				                    	<a href="#">Triler</a>
+				                	</span>
+				              	</div>
+				            </div>
+			          	</div>
+			          <!-- <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
 			            <div class="card card-list">
-			              	<div class="card__cover">
-				                <img :src="image"  alt="Tenet">
-				                <a href="filmsablon.html" class="card__play">
-				                  <i class="fa fa-play" aria-hidden="true"></i>
-				                </a>
-				                <a class="details" href="moviedetail.html">details</a>
-				                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-				                <span class="card__year">2020</span>
-			              	</div>
-			              	<div class="card__content">
-			                	<h3 class="card__title"><a href="filmsablon.html">Tenet</a></h3>
-			                	<span class="card__category">
-			                    	<a href="#">Action</a>
-			                    	<a href="#">Triler</a>
-			                	</span>
-			              	</div>
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
 			            </div>
-		          	</div>
-		          <!-- <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div> -->
-		        </div>
- 				<div class="col-12">
-		       	 	<button id="loadMore"><i class="fa fa-plus" aria-hidden="true"></i> Load more</button>
- 				</div>
-			    <div class="text-center mt-1 mb-4 col-12 ">
-			       <div class="spinner-border text-light d-none" role="status">
-			          <span class="sr-only ">Loading...</span>
-			       </div>
-			    </div>
-			 </div>
-			</div>
-		</div>
-		<div class="bodyall">
-		  <div class="container-fluid">
-		    <h3 class="text-center text-lg-left ml-3 text-white">New items</h3>
-		    <ul class="nav nav-pills mb-3 new-items" style="border-bottom:1px solid #2c2a36" id="tab" role="tablist">
-		      <li class="nav-item">
-		        <a class="nav-link filter-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">NEW RELEASES</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link filter-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">MOVIES</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link filter-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">TV SERIES</a>
-		      </li>
-		    </ul>
-
-		    <div class="tab-content" id="pills-tabContent">
-
-
-		      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-		        <div class="row">
-		          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
-	            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
-		            <div class="card card-list">
-		              <div class="card__cover">
-		                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
-		                <a href="#" class="card__play">
-		                  <i class="fa fa-play" aria-hidden="true"></i>
-		                </a>
-		                <a class="details" href="moviedetail.html">details</a>
-		                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
-		                <span class="card__year">2020</span>
-		              </div>
-		              <div class="card__content">
-		                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-		                <span class="card__category">
-		                    <a href="#">Action</a>
-		                    <a href="#">Triler</a>
-		                </span>
-		              </div>
-		            </div>
-		          </div>
-		        </div> 
-		      </div>
-
-		      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">....
-		      </div>
-
-		      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">....
-		      </div>
-
-
-		    </div>
-
-
-		 
-		  </div>
-		  <!-- /.container -->
-		</div>	
-	</section>
- 
-	<section class="section mt-1">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 text-white">
-					<h2 class="section__title mt-1"><b>Film site</b> – Best movie website</h2>
-					<p class="section__text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-					<p class="section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-4 col-xl-3 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div> -->
+			        </div>
+	 				<div class="col-12">
+			       	 	<button id="loadMore"><i class="fa fa-plus" aria-hidden="true"></i> Load more</button>
+	 				</div>
+				    <div class="text-center mt-1 mb-4 col-12 ">
+				       <div class="spinner-border text-light d-none" role="status">
+				          <span class="sr-only ">Loading...</span>
+				       </div>
+				    </div>
+				 </div>
 				</div>
 			</div>
-		</div>
-	</section>
+			<div class="bodyall">
+			  <div class="container-fluid">
+			    <h3 class="text-center text-lg-left ml-3 text-white">New items</h3>
+			    <ul class="nav nav-pills mb-3 new-items" style="border-bottom:1px solid #2c2a36" id="tab" role="tablist">
+			      <li class="nav-item">
+			        <a class="nav-link filter-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">NEW RELEASES</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link filter-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">MOVIES</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link filter-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">TV SERIES</a>
+			      </li>
+			    </ul>
+
+			    <div class="tab-content" id="pills-tabContent">
 
 
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="footer__content">
-						<span class="footer__copyright">© 2020 filmSite<br> Create by 
-							<a href="#" target="_blank">Khazar alians</a>
-						</span>
+			      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+			        <div class="row">
+			          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+		            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+			            <div class="card card-list">
+			              <div class="card__cover">
+			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <a href="#" class="card__play">
+			                  <i class="fa fa-play" aria-hidden="true"></i>
+			                </a>
+			                <a class="details" href="moviedetail.html">details</a>
+			                <span class="card__rate"><i class="fa fa-star" aria-hidden="true"></i> 8.4</span>
+			                <span class="card__year">2020</span>
+			              </div>
+			              <div class="card__content">
+			                <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+			                <span class="card__category">
+			                    <a href="#">Action</a>
+			                    <a href="#">Triler</a>
+			                </span>
+			              </div>
+			            </div>
+			          </div>
+			        </div> 
+			      </div>
 
-						<nav class="footer__nav">
-							<a href="about.html">About Us</a>
-							<a href="contacts.html">Contacts</a>
-							<a href="privacy.html">Privacy Policy</a>
-						</nav>
+			      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">....
+			      </div>
 
-						<a class="footer__back" href="#top">
-							<i class="fa fa-arrow-up" aria-hidden="true"></i>
-						</a>
+			      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">....
+			      </div>
+
+
+			    </div>
+
+
+			 
+			  </div>
+			  <!-- /.container -->
+			</div>	
+		</section>
+	 
+		<section class="section mt-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-white">
+						<h2 class="section__title mt-1"><b>Film site</b> – Best movie website</h2>
+						<p class="section__text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+						<p class="section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+		</section>
+
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="footer__content">
+							<span class="footer__copyright">© 2020 evilfilm<br> Create by 
+								<a href="#" target="_blank">Evil Coder</a>
+							</span>
+
+							<nav class="footer__nav">
+								<a href="about.html">About Us</a>
+								<a href="contacts.html">Contacts</a>
+								<a href="privacy.html">Privacy Policy</a>
+							</nav>
+
+							<a class="footer__back" href="#top">
+								<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 
 
 
- 	<script type="text/javascript" src="vendor/jquery/jquery.min.js" ></script>
- 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="plugins/slick/slick.min.js"></script>
-	<script type="text/javascript" src="plugins/mervick/prettify.js"></script>
-	<script type="text/javascript" src="plugins/mervick/dist/emojionearea.js"></script>
- 	<script type="text/javascript" src="dist/js/index.js"></script>
+	 	<script type="text/javascript" src="vendor/jquery/jquery.min.js" ></script>
+	 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="plugins/slick/slick.min.js"></script>
+		<script type="text/javascript" src="plugins/mervick/prettify.js"></script>
+		<script type="text/javascript" src="plugins/mervick/dist/emojionearea.js"></script>
+	 	<script type="text/javascript" src="dist/js/index.js"></script>
 
 
- 	<script type="text/javascript">
-		var app = new Vue({
-		  el: '#app',
-		  data: {
-		    size: 100,
-		    image: 'dist/img/cover/Total-Film-Tenet-covers-1-600x819.webp'
-		  }
-		})
- 	</script>
-</body>
+	 	<script type="text/javascript">
+			var app = new Vue({
+			  el: '#app',
+			  data: {
+			    size: 20,
+			    image: 'dist/img/cover/Total-Film-Tenet-covers-1-600x819.webp'
+			  }
+			});
+
+			var app2 = new Vue({
+				el:'#app2',
+				data:{
+					stories:[
+						{name:'The Witcher',coverpic:'https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1',src:'https://www.youtube.com/embed/ndl1W4ltcmg'},
+						{name:'TENET',coverpic:'https://gizmostory.com/wp-content/uploads/2020/06/Tenet-300x300-1.jpg',src:'https://www.youtube.com/embed/L3pk_TBkihU'},
+						{name:'The Witcher',coverpic:'https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1',src:'https://www.youtube.com/embed/ndl1W4ltcmg'},
+						{name:'TENET',coverpic:'https://gizmostory.com/wp-content/uploads/2020/06/Tenet-300x300-1.jpg',src:'https://www.youtube.com/embed/L3pk_TBkihU'},
+						{name:'The Witcher',coverpic:'https://th.bing.com/th/id/OIP.FAq6HY6_62GWDhj9RGhgwAHaHa?pid=Api&rs=1',src:'https://www.youtube.com/embed/ndl1W4ltcmg'},
+						{name:'TENET',coverpic:'https://gizmostory.com/wp-content/uploads/2020/06/Tenet-300x300-1.jpg',src:'https://www.youtube.com/embed/L3pk_TBkihU'}
+					]
+				}
+			})
+	 	</script>
+	</body>
 </html>
