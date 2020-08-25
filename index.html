@@ -690,12 +690,12 @@
 			    <div class="tab-content" id="pills-tabContent">
 
 
-			      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-			        <div class="row">
-			          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+			      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" >
+			        <div class="row" id="app3">
+			          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4" v-for="size in sizes">
 			            <div class="card card-list">
 			              <div class="card__cover">
-			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
+			                <img :src="images" alt="Tenet">
 			                <a href="#" class="card__play">
 			                  <i class="fa fa-play" aria-hidden="true"></i>
 			                </a>
@@ -712,7 +712,7 @@
 			              </div>
 			            </div>
 			          </div>
-			          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+<!-- 			          <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-4">
 			            <div class="card card-list">
 			              <div class="card__cover">
 			                <img src="http://static3.businessinsider.com/image/511cffe5eab8ea1355000012-948-1445/new%20harry%20potter%20cover.jpg" alt="">
@@ -911,7 +911,7 @@
 			                </span>
 			              </div>
 			            </div>
-			          </div>
+			          </div> -->
 			        </div> 
 			      </div>
 
@@ -1011,7 +1011,14 @@
 						{name:'TENET',coverpic:'https://gizmostory.com/wp-content/uploads/2020/06/Tenet-300x300-1.jpg',src:'https://www.youtube.com/embed/L3pk_TBkihU'}
 					]
 				}
-			})
+			});
+			var app3 = new Vue({
+			  el: '#app3',
+			  data: {
+			    sizes: 20,
+			    images: 'dist/img/cover/Total-Film-Tenet-covers-1-600x819.webp'
+			  }
+			});
 	 	</script>
 	</body>
 </html>
