@@ -1,0 +1,109 @@
+*
+	
+	padding: 0
+	margin: 0
+body
+	box-sizing: border-box
+	background-color: #333
+
+header
+	padding: 10px
+	h1
+		color: #fff
+		line-height: 2em
+
+	p
+		color: #555
+		text-align: justify
+		font-weight: 600
+		font-size: 18px
+
+
+section
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+	.box-area-1
+		
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		width: 200px
+		height: auto
+		padding: 5px
+		margin: 5px
+		text-align: center
+		cursor: pointer
+		&:nth-child(1) .bg-img-1
+			background-image: url(samuel.jpg)
+		&:nth-child(2) .bg-img-1
+			background-image: url(frank.jfif)
+		&:nth-child(3) .bg-img-1
+			background-image: url(morgan.jpg)
+		&:nth-child(4) .bg-img-1
+			background-image: url(bruce.jpg)
+		&:nth-child(5) .bg-img-1
+			background-image: url(nicolas.jfif)
+		&:nth-child(6) .bg-img-1
+			background-image: url(robert.jpg)
+		&:nth-child(7) .bg-img-1
+			background-image: url(johnny.jfif)
+		&:nth-child(8) .bg-img-1
+			background-image: url(danny.jfif)
+	.bg-img-1
+		display: flex
+		justify-content: center
+		align-items: center
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		width: 100px
+		height: 100px
+		border: 2px solid red
+		border-radius: 50%
+	.img-text
+		font-family: 'Raleway', sans-serif
+		p
+			font-weight: bold
+			font-size: 18px
+			line-height: 40px
+			color: #fff
+		span
+			line-height: 24px
+			font-size: 13px
+			font-weight: 600
+
+.pagination
+	display: flex
+	justify-content: center
+	align-items: center
+	padding: 5px
+	box-sizing: border-box
+	a
+		text-decoration: none
+		color: #fff
+		padding: 5px 12px
+		border: 1px solid red
+		margin-left: 2px
+		transition: all .3s ease-out
+		&:first-child
+			border-top-left-radius: 4px
+			border-bottom-left-radius: 4px
+		&:last-child
+			border-top-right-radius: 4px
+			border-bottom-right-radius: 4px
+		&:hover:not(.active)
+			background-color: darkred
+.active
+	background: red
+
+
+
+
+
+
+
+
+	
