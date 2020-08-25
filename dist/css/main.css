@@ -856,7 +856,7 @@ color: #fd6060;
 /*All*/
 @media (min-width: 1310px){
   .section .container,.footer .container,.story-line .container,.navbar .container{
-      max-width: 1310px;
+      max-width: 1310px !important;
   }
 }
 
@@ -1554,3 +1554,4 @@ body{
   color: #fff;
   font-size: 14px;
 }
+ 
